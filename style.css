@@ -537,6 +537,36 @@ body {
   height: 54px;
   top: 449px;
   left: 17px;
+  display: flex;
+  gap: 20px; /* відстань між кнопками */
+}
+
+.div-wrapper, .frame-13 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.div-wrapper {
+  background-color: #fcd535;
+  color: #181a20;
+}
+
+.div-wrapper:hover {
+  background-color: #e5c200;
+}
+
+.frame-13 {
+  color: #1e2329;
+}
+
+.frame-13:hover {
+  background-color: #056cd2;
 }
 
 .desktop .div-wrapper {
@@ -990,18 +1020,7 @@ body {
   font-weight: 400;
 }
 
-.desktop .text-wrapper-22 {
-  position: absolute;
-  width: 219px;
-  top: 525px;
-  left: 17px;
-  font-family: "Montserrat", Helvetica;
-  font-weight: 400;
-  color: #233142;
-  font-size: 24px;
-  letter-spacing: 1.00px;
-  line-height: 30px;
-}
+
 
 .desktop .text-wrapper-23 {
   width: 74px;
@@ -1050,31 +1069,9 @@ body {
   line-height: 46px;
 }
 
-.desktop .text-wrapper-26 {
-  width: 219px;
-  top: 253px;
-  left: 17px;
-  color: #233142;
-  letter-spacing: 1.00px;
-  line-height: 30px;
-  position: absolute;
-  font-family: "Montserrat", Helvetica;
-  font-weight: 400;
-  font-size: 24px;
-}
 
-.desktop .text-wrapper-27 {
-  width: 627px;
-  top: 571px;
-  left: 17px;
-  font-family: "Poppins", Helvetica;
-  color: #5c6f87;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: 30px;
-  position: absolute;
-  font-weight: 400;
-}
+
+
 
 .desktop .frame-23 {
   position: absolute;
@@ -1097,18 +1094,7 @@ body {
   line-height: 46px;
 }
 
-.desktop .text-wrapper-29 {
-  width: 348px;
-  top: 797px;
-  left: 17px;
-  color: #233142;
-  letter-spacing: 1.00px;
-  line-height: 30px;
-  position: absolute;
-  font-family: "Montserrat", Helvetica;
-  font-weight: 400;
-  font-size: 24px;
-}
+
 
 .desktop .text-wrapper-30 {
   width: 74px;
@@ -3410,7 +3396,7 @@ body {
   height: 50px;
   border-radius: 35px;
   overflow: hidden;
-  background-color: var(--main);
+  background: linear-gradient(90deg, #090574, #240bc7);
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -3439,8 +3425,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+    transition: background-color 0.3s ease;
 }
-
+.div-wrapper:hover {
+  border-color: #377dff;
+}
 .desktop .text-wrapper-43 {
   width: 92px;
   font-family: "Poppins", Helvetica;
